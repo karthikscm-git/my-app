@@ -24,7 +24,7 @@ stage('Build Docker Imager'){
    }
  stage('Nexus Image Push'){
    sh "docker login -u admin -p admin123 18.222.149.107:8083"
-   sh "docker tag karthikmcadocker/myweb:0.0.2 18.222.149.107:8083/damo:1.0.0"
+   sh "docker tag karthikmcadocker/myweb:0.0.2 18.222.149.107:8083/kkk:1.0.0"
    sh 'docker push 18.222.149.107:8083/damo:1.0.0'
    }
 stage('Remove Previous Container'){
